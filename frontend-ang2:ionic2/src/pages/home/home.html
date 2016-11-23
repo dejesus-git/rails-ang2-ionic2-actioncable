@@ -7,6 +7,7 @@
 </ion-header>
 
 <ion-content>
+  <button (click)="load();" ion-button color="secondary">Test Broadcast</button>
   <ion-card *ngFor="let message of smsMessages">
       <ion-item>
         {{ message.body }}
