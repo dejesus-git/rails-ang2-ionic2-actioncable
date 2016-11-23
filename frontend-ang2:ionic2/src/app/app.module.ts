@@ -20,15 +20,4 @@ import { Ng2Cable, Broadcaster } from 'ng2-cable/js/index';
   ],
   providers: [ MessageData, Ng2Cable, Broadcaster ]
 })
-export class AppModule {
-  messages: any;
-  constructor(private ng2cable: Ng2Cable, private broadcaster: Broadcaster){
-    this.ng2cable.subscribe('http://localhost:3000/cable', 'MessagesChannel');
-
-    // this.broadcaster.on<string>('MessagesChannel').subscribe(
-    //   messages => {
-    //     console.log(messages);
-    //   });
-  }
-
-}
+export class AppModule {}
